@@ -1,43 +1,43 @@
 v 4
-file . "eight_to_one_mux.vhd" "2e3c5e883328fcca36fee1a4061ee57315098535" "20201010040409.631":
-  entity eight_to_one_mux at 1( 0) + 0 on 61;
-  architecture arch of eight_to_one_mux at 13( 243) + 0 on 62;
-file . "four_input_or.vhd" "cffeeb6daef6d5fe6471d6162bd95ab79d027c11" "20201010040322.748":
-  entity four_input_or at 1( 0) + 0 on 57;
-  architecture arch of four_input_or at 12( 199) + 0 on 58;
-file . "three_input_and.vhd" "c1c4bcbab5fba6475ddf6036fb90ae14b5c77dcf" "20201010040309.675":
-  entity three_input_and at 1( 0) + 0 on 53;
-  architecture arch of three_input_and at 12( 197) + 0 on 54;
-file . "four_input_and.vhd" "67565b3e1039cf4cf5ef32fdd38b7c45c38ecf01" "20201010040318.759":
-  entity four_input_and at 1( 0) + 0 on 55;
-  architecture arch of four_input_and at 12( 200) + 0 on 56;
-file . "alu_tb.vhd" "91fa5ec04c2e3cf0074477b678d334b299c05b1b" "20201010045801.549":
-  entity alu_tb at 1( 0) + 0 on 77;
-  architecture behavior of alu_tb at 8( 107) + 0 on 78;
-file . "subtract.vhd" "44ba52937d6125bf44755410cf0578c9b221faa1" "20201010045729.475":
-  entity subtract at 1( 0) + 0 on 71;
-  architecture arch of subtract at 14( 293) + 0 on 72;
-file . "alu.vhd" "e31981a3023a64976b2cdc705624a74df20d0f54" "20201010045757.128":
-  entity alu at 1( 0) + 0 on 75;
-  architecture structural of alu at 15( 397) + 0 on 76;
-file . "not_gate.vhd" "568e6327f911a9497225388cf965e992e2f02fb2" "20201010040257.113":
-  entity not_gate at 1( 0) + 0 on 51;
-  architecture arch of not_gate at 11( 189) + 0 on 52;
-file . "or_gate.vhd" "cb18598e10bfd22e78e1cbb1c7ce71407e778fad" "20201010040250.139":
-  entity or_gate at 1( 0) + 0 on 47;
-  architecture arch of or_gate at 11( 189) + 0 on 48;
-file . "and_gate.vhd" "4341ac70d79dd438d91d43607988c5af57939822" "20201010040246.863":
-  entity and_gate at 1( 0) + 0 on 45;
-  architecture arch of and_gate at 11( 191) + 0 on 46;
-file . "xor_gate.vhd" "78976dd14e0ed2d05a3eb71f8ba721540a900266" "20201010040254.117":
-  entity xor_gate at 1( 0) + 0 on 49;
-  architecture arch of xor_gate at 11( 191) + 0 on 50;
-file . "add.vhd" "e97f75c719b55f1a6230dd32643a9ace59244dac" "20201010045724.655":
-  entity add at 1( 0) + 0 on 69;
-  architecture arch of add at 14( 303) + 0 on 70;
-file . "eight_input_or.vhd" "c2d861ae70102b1df1cf447e49bf942142191afe" "20201010040325.792":
-  entity eight_input_or at 1( 0) + 0 on 59;
-  architecture arch of eight_input_or at 12( 216) + 0 on 60;
-file . "four_to_one_mux.vhd" "b4233067b302b2eca0a83ac94ed38bccb24287f2" "20201010040419.854":
-  entity four_to_one_mux at 1( 0) + 0 on 63;
-  architecture arch of four_to_one_mux at 13( 228) + 0 on 64;
+file . "eight_to_one_mux.vhd" "2e3c5e883328fcca36fee1a4061ee57315098535" "20201010054314.971":
+  entity eight_to_one_mux at 1( 0) + 0 on 99;
+  architecture arch of eight_to_one_mux at 13( 243) + 0 on 100;
+file . "four_input_or.vhd" "cffeeb6daef6d5fe6471d6162bd95ab79d027c11" "20201010054252.399":
+  entity four_input_or at 1( 0) + 0 on 93;
+  architecture arch of four_input_or at 12( 199) + 0 on 94;
+file . "three_input_and.vhd" "c1c4bcbab5fba6475ddf6036fb90ae14b5c77dcf" "20201010054302.083":
+  entity three_input_and at 1( 0) + 0 on 95;
+  architecture arch of three_input_and at 12( 197) + 0 on 96;
+file . "four_input_and.vhd" "67565b3e1039cf4cf5ef32fdd38b7c45c38ecf01" "20201010054248.203":
+  entity four_input_and at 1( 0) + 0 on 91;
+  architecture arch of four_input_and at 12( 200) + 0 on 92;
+file . "alu_tb.vhd" "dafd09f2f82a802023011fa5833271e5012def0b" "20201010065522.703":
+  entity alu_tb at 1( 0) + 0 on 121;
+  architecture behavior of alu_tb at 8( 107) + 0 on 122;
+file . "subtract.vhd" "44ba52937d6125bf44755410cf0578c9b221faa1" "20201010054239.022":
+  entity subtract at 1( 0) + 0 on 89;
+  architecture arch of subtract at 14( 293) + 0 on 90;
+file . "alu.vhd" "eee5f903ba0ad8577903d50b4c9f46b06962af5d" "20201010065514.324":
+  entity alu at 1( 0) + 0 on 119;
+  architecture structural of alu at 15( 397) + 0 on 120;
+file . "not_gate.vhd" "568e6327f911a9497225388cf965e992e2f02fb2" "20201010054229.857":
+  entity not_gate at 1( 0) + 0 on 85;
+  architecture arch of not_gate at 11( 189) + 0 on 86;
+file . "or_gate.vhd" "cb18598e10bfd22e78e1cbb1c7ce71407e778fad" "20201010054221.792":
+  entity or_gate at 1( 0) + 0 on 81;
+  architecture arch of or_gate at 11( 189) + 0 on 82;
+file . "and_gate.vhd" "4341ac70d79dd438d91d43607988c5af57939822" "20201010054217.898":
+  entity and_gate at 1( 0) + 0 on 79;
+  architecture arch of and_gate at 11( 191) + 0 on 80;
+file . "xor_gate.vhd" "78976dd14e0ed2d05a3eb71f8ba721540a900266" "20201010054225.352":
+  entity xor_gate at 1( 0) + 0 on 83;
+  architecture arch of xor_gate at 11( 191) + 0 on 84;
+file . "add.vhd" "e97f75c719b55f1a6230dd32643a9ace59244dac" "20201010054235.126":
+  entity add at 1( 0) + 0 on 87;
+  architecture arch of add at 14( 303) + 0 on 88;
+file . "eight_input_or.vhd" "c2d861ae70102b1df1cf447e49bf942142191afe" "20201010054307.377":
+  entity eight_input_or at 1( 0) + 0 on 97;
+  architecture arch of eight_input_or at 12( 216) + 0 on 98;
+file . "four_to_one_mux.vhd" "b4233067b302b2eca0a83ac94ed38bccb24287f2" "20201010054320.683":
+  entity four_to_one_mux at 1( 0) + 0 on 101;
+  architecture arch of four_to_one_mux at 13( 228) + 0 on 102;

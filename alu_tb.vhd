@@ -38,7 +38,105 @@ begin
         wait for 10 ns;
         assert (out0 = '1' and out1 = '0') report "Error" severity error;
         report "Done with the test." 
-    	severity NOTE;
+        severity NOTE;
+        
+        test0 <= '1';
+        test1 <= '0';
+        test2 <= '0';
+        input0 <= '0';
+        input1 <= '1';
+        input2 <= '0';
+        input3 <= '0';
+        wait for 10 ns;
+        assert (out0 = '0' and out1 = '1') report "Error" severity error;
+        report "Done with the test." 
+        severity NOTE;
+
+        test0 <= '0';
+        test1 <= '0';
+        test2 <= '0';
+        input0 <= '1';
+        input1 <= '1';
+        input2 <= '0';
+        input3 <= '0';
+        wait for 10 ns;
+        assert (out0 = '0' and out1 = '0') report "Error" severity error;
+        report "Done with the test." 
+        severity NOTE;
+
+        test0 <= '0';
+        test1 <= '0';
+        test2 <= '1';
+        input0 <= '1';
+        input1 <= '1';
+        input2 <= '0';
+        input3 <= '0';
+        wait for 10 ns;
+        assert (out0 = '1' and out1 = '1') report "Error" severity error;
+        report "Done with the test." 
+        severity NOTE;
+
+        test0 <= '0';
+        test1 <= '1';
+        test2 <= '0';
+        input0 <= '1';
+        input1 <= '1';
+        input2 <= '0';
+        input3 <= '0';
+        wait for 10 ns;
+        assert (out0 = '1' and out1 = '1') report "Error" severity error;
+        report "Done with the test." 
+        severity NOTE;
+
+        test0 <= '0';
+        test1 <= '1';
+        test2 <= '1';
+        input0 <= '1';
+        input1 <= '0';
+        input2 <= '0';
+        input3 <= '0';
+        wait for 10 ns;
+        assert (out0 = '0' and out1 = '1') report "Error" severity error;
+        report "Done with the test." 
+        severity NOTE;
+
+        test0 <= '1';
+        test1 <= '0';
+        test2 <= '0';
+        input0 <= '1';
+        input1 <= '0';
+        input2 <= '1';
+        input3 <= '1';
+        wait for 10 ns;
+        assert (out0 = '0' and out1 = '1' and cout1 ='1') report "Error" severity error;
+        report "Done with the test." 
+        severity NOTE;
+
+        test0 <= '1';
+        test1 <= '0';
+        test2 <= '1';
+        input0 <= '1';
+        input1 <= '0';
+        input2 <= '1';
+        input3 <= '1';
+        wait for 10 ns;
+        assert (out0 = '1' and out1 = '0') report "Error" severity error;
+        report "Done with the test." 
+        severity NOTE;
+
+        test0 <= '1';
+        test1 <= '1';
+        test2 <= '0';
+        input0 <= '1';
+        input1 <= '0';
+        input2 <= '1';
+        input3 <= '1';
+        wait for 10 ns;
+        assert (out0 = '1' and out1 = '1') report "Error" severity error;
+        report "Done with the test." 
+        severity NOTE;
+
+
 		wait;
     end process;
 end architecture;
