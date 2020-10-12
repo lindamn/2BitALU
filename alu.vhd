@@ -13,7 +13,7 @@ entity alu is
 end entity alu;
 
 architecture structural of alu is
-    signal cout1,cout2,cout3: std_logic;
+    signal cout1,cout2,cout3,cout4: std_logic;
     signal bout1,bout2: std_logic;
     signal temp1,temp2,temp3: std_logic;
     signal and0, and1: std_logic;
@@ -22,10 +22,11 @@ architecture structural of alu is
     signal not0, not1, not2, not3: std_logic;
     signal add0, add1: std_logic;
     signal inc0, inc1: std_logic;
-    signal sub1s0, sub1s1: std_logic;
+    signal sub1s0, sub1s1, sub1s0temp, sub1s1temp: std_logic;
     signal sub2s0, sub2s1: std_logic;
     signal addcout, inccout, sub1scout, sub2scout: std_logic;
     signal bit02s, bit12s: std_logic;
+    signal trash1: std_logic;
     begin
         --and operation
         bit0AND: entity work.and_gate(arch) port map(i0,j0,and0);
@@ -45,8 +46,10 @@ architecture structural of alu is
         --1s complement
         j01SCOMPLEMENT: entity work.not_gate(arch) port map(j1,not2);
         j11SCOMPLEMENT: entity work.not_gate(arch) port map(j0,not3);
-        bit0SUB1s: entity work.add(arch) port map(i1,not3,'0',sub1s1,bout1);
-        bit1SUB1s: entity work.add(arch) port map(i0,not2,bout1,sub1s0,sub1scout);
+        bit0SUB1s: entity work.add(arch) port map(i1,not3,'0',sub1s1temp,bout1);
+        bit1SUB1s: entity work.add(arch) port map(i0,not2,bout1,sub1s0temp,sub1scout);
+        addCOUT: entity work.add(arch) port map(sub1s1temp,sub1scout,'0',sub1s1,cout4);
+        addCOUT2: entity work.add(arch) port map(sub1s0temp,'0',cout4,sub1s0,trash1);
         --2s complement
         bit0PLUS1: entity work.add(arch) port map(not3,'1','0',bit02s,cout3);
         bit1PLUS1: entity work.add(arch) port map(not2,cout3,'0',bit12s,temp3);
@@ -60,5 +63,5 @@ architecture structural of alu is
         --2nd bit in mux
         bit1MUX: entity work.eight_to_one_mux(arch) port map(and0,or0,xor0,not0,add0,sub1s0,sub2s0,inc0,s0,s1,s2,k0);
         --cout in mux
-        coutMUX: entity work.four_to_one_mux(arch) port map(addcout,sub1scout,sub2scout,inccout,s1,s2,cout);
+        coutMUX: entity work.four_to_one_mux(arch) port map(addcout,sub1scout,'0',inccout,s1,s2,cout);
 end architecture structural;
